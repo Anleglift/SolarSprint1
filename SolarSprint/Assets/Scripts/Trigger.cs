@@ -7,6 +7,8 @@ public class Trigger : MonoBehaviour
 {
     public GameObject Player;
     public GameObject Text;
+    public GameObject Dialogue;
+    public GameObject Image;
     public float DelayTime;
     public Dialogue CodeDialogue;
 
@@ -19,10 +21,6 @@ public class Trigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(CodeDialogue.index == CodeDialogue.lines.Length)
-        {
-            Destroy(Text, DelayTime);
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -30,6 +28,7 @@ public class Trigger : MonoBehaviour
         if (collision.gameObject == Player)
         {
             Text.SetActive(true);
+            gameObject.SetActive(false);
         }
     }
 }

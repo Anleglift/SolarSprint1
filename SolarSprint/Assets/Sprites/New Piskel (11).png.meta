@@ -141,7 +141,7 @@ TextureImporter:
       name: New Piskel (11)_1
       rect:
         serializedVersion: 2
-        x: 1207
+        x: 1213
         y: 1022
         width: 619
         height: 1030
@@ -162,7 +162,7 @@ TextureImporter:
       name: New Piskel (11)_2
       rect:
         serializedVersion: 2
-        x: 2239
+        x: 2243
         y: 2047
         width: 610
         height: 675
@@ -263,6 +263,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: New Piskel (11)_7
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 2053
+        width: 544
+        height: 571
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0bf8fbc16b29a45bcdec4c73da4c59
+      internalID: -8044199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel (11)_8
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 2670
+        width: 485
+        height: 251
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0a48075b17463459eb7419b25009a9
+      internalID: -1126433569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -281,6 +323,8 @@ TextureImporter:
       New Piskel (11)_4: 1379405547
       New Piskel (11)_5: -261039249
       New Piskel (11)_6: 1830007959
+      New Piskel (11)_7: -1932434413
+      New Piskel (11)_8: -8044199
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
