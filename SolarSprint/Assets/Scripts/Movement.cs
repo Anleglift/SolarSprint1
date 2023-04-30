@@ -9,8 +9,8 @@ public class Movement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator Player;
     public Vector2 newCenterOfMass;
-    public float linearDrag = 0.5f;
-    public float angularDrag = 0.5f;
+    public float linearDrag = 30f;
+    public float angularDrag = 30f;
     // Start is called before the first frame update
     void Start()
     {
