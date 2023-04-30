@@ -9,12 +9,6 @@ public class Timer : MonoBehaviour
     FadeScript ShowUi;
     FadeScript HideUi;
 
-    NoTime ShowNoTime;
-    NoTime HideNoTime;
-
-    Retry RetryIn;
-    Retry RetryOut;
-
     [Header("Component")]
     public TextMeshProUGUI timerText;
 
@@ -31,13 +25,6 @@ public class Timer : MonoBehaviour
         ShowUi = GameObject.FindGameObjectWithTag("FadeScript").GetComponent<FadeScript>();
         HideUi = GameObject.FindGameObjectWithTag("FadeScript").GetComponent <FadeScript>();
         HideUi.HideUI();
-
-        ShowNoTime = GameObject.FindGameObjectWithTag("NoTime").GetComponent<NoTime>();
-        HideNoTime = GameObject.FindGameObjectWithTag("NoTime").GetComponent<NoTime>();
-        HideNoTime.TextOut();
-
-        RetryIn = GameObject.FindGameObjectWithTag("Retry").GetComponent<Retry>();
-        RetryOut = GameObject.FindGameObjectWithTag("Retry").GetComponent<Retry>();
     }
 
     void Update()
@@ -58,8 +45,9 @@ public class Timer : MonoBehaviour
         if(currentTime == timerLimit)
         {
             ShowUi.ShowUI();
-            ShowNoTime.Invoke("TextIn", 1);
-            RetryIn.Invoke("RetryIn", 1);
+
+            Invoke("RestartLevel", 2);
+            
         }
     }
 
@@ -68,5 +56,9 @@ public class Timer : MonoBehaviour
         timerText.text = currentTime.ToString("0.0");
     }
 
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
 
